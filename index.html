@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matrix Operations Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    /* Add some basic styling for the visualization */
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    input[type="number"] {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Matrix Operations Visualization</h1>
+
+  <div>
+    <label for="matrix1">Matrix 1:</label>
+    <input type="number" id="m1r1c1" value="1">
+    <input type="number" id="m1r1c2" value="2">
+    <input type="number" id="m1r1c3" value="3">
+    <br>
+    <input type="number" id="m1r2c1" value="4">
+    <input type="number" id="m1r2c2" value="5">
+    <input type="number" id="m1r2c3" value="6">
+    <br>
+    <input type="number" id="m1r3c1" value="7">
+    <input type="number" id="m1r3c2" value="8">
+    <input type="number" id="m1r3c3" value="9">
+  </div>
+
+  <div>
+    <label for="matrix2">Matrix 2:</label>
+    <input type="number" id="m2r1c1" value="1">
+    <input type="number" id="m2r1c2" value="2">
+    <input type="number" id="m2r1c3" value="3">
+    <br>
+    <input type="number" id="m2r2c1" value="4">
+    <input type="number" id="m2r2c2" value="5">
+    <input type="number" id="m2r2c3" value="6">
+    <br>
+    <input type="number" id="m2r3c1" value="7">
+    <input type="number" id="m2r3c2" value="8">
+    <input type="number" id="m2r3c3" value="9">
+  </div>
+
+  <button onclick="calculateDotProduct()">Calculate Dot Product</button>
+
+  <h2>Matrix 1</h2>
+  <div id="matrix1"></div>
+
+  <h2>Matrix 2</h2>
+  <div id="matrix2"></div>
+
+  <h2>Dot Product Result</h2>
+  <div id="dot-product-result"></div>
+
+  <script src="dot.js"></script>
+</body>
+</html>
